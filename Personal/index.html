@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript,Web development ,freelancer, mobile app,web design">
+    <meta name="author" content="Aya Etman">
+    <link rel="shorcut icon" href="" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Personal</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="">
+                <ul class="main-nav" id="main-nav">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portoflio">Portoflio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="xmark"></i><!-- -->
+                </ul>
+                <i class="fa-solid fa-bars" id="btn"></i><!-- -->
+            </nav>
+            <div class="header-box">
+                <h1>Hello I am <span>Aya</span> Etman</h1>
+                <h4>Web and Mobile development</h4>
+                <a href="#" class="btn" id="#contact">Contact Me</a>
+                <a href="#" class="btn" id="#contact">Download CV</a>
+            </div>
+        </div>
+
+    </header>
+    <script>
+        document.getElementById("btn").onclick = function () {
+            document.getElementById("main-nav").style.right = "0px"
+        };
+        document.getElementById("xmark").onclick = function () {
+            document.getElementById("main-nav").style.right = "-200px"
+        };
+    </script>
+</body>
+
+</html>

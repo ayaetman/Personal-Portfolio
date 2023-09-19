@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url(../images/freelancer.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right bottom;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    margin-top: 10px;
+}
+.main-nav{
+    margin-top: 10px;
+}
+.main-nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: white;
+    font-size: 18px;
+}
+
+.main-nav a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: darkmagenta;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+/**/
+nav .fa-solid{
+display: none;
+
+}
+
+.header-box{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+h1 span{
+    color: darkmagenta;
+    font-weight: bold;
+}
+.header-box h4{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.btn{
+    background-color: darkmagenta;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.btn:hover{
+    border: 1px solid darkmagenta;
+
+}

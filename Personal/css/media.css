@@ -1,0 +1,46 @@
+@media (max-width:700px) {
+    header {
+        background-image: unset;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    /**/
+    .main-nav {
+        background-color: darkmagenta;
+        width: 150px;
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        transition: 1s;
+        position: fixed;
+        z-index: 100;
+        padding-top: 70px;
+        margin-top: 0;
+    }
+    .main-nav li {
+        margin-top: 25px;
+        display: block;
+        cursor: pointer;
+    }
+    .main-nav .fa-solid {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+    }
+    nav .fa-solid:last-of-type{
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+}
